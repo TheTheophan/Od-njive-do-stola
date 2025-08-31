@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('paket_biljakas', function (Blueprint $table) {
-            $table->bigIncrements('IDpaketBiljaka');
+            $table->id('id');
             $table->foreignId('paketKorisnikaID');
             $table->foreignId('biljkaPoljoprivrednikaID');
             $table->decimal('kilaza', 10, 2)->nullable();

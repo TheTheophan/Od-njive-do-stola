@@ -19,10 +19,6 @@ class Biljka extends Model
 
     public function biljkaPoljoprivrednikas()
     {
-        return $this->hasMany(
-            BiljkaPoljoprivrednika::class,
-            'biljkaID',
-            'IDbiljka'
-        );
+        return $this->hasMany(BiljkaPoljoprivrednika::class, 'biljkaID');
     }
 }

@@ -28,24 +28,16 @@ class PaketKorisnika extends Model
 
     public function tipPaketaPaketKorisnika()
     {
-        return $this->belongsTo(TipPaketa::class, 'tipPaketaID', 'IDtipPaketa');
+        return $this->belongsTo(TipPaketa::class, 'tipPaketaID');
     }
 
     public function fakturas()
     {
-        return $this->hasMany(
-            Faktura::class,
-            'paketKorisnikaID',
-            'IDpaketKorisnika'
-        );
+        return $this->hasMany(Faktura::class, 'paketKorisnikaID');
     }
 
     public function paketBiljakas()
     {
-        return $this->hasMany(
-            PaketBiljaka::class,
-            'paketKorisnikaID',
-            'IDpaketKorisnika'
-        );
+        return $this->hasMany(PaketBiljaka::class, 'paketKorisnikaID');
     }
 }

@@ -27,17 +27,12 @@ class PaketBiljaka extends Model
     {
         return $this->belongsTo(
             BiljkaPoljoprivrednika::class,
-            'biljkaPoljoprivrednikaID',
-            'IDbiljkaPoljoprivrednika'
+            'biljkaPoljoprivrednikaID'
         );
     }
 
     public function paketKorisnikaPaketBiljaka()
     {
-        return $this->belongsTo(
-            PaketKorisnika::class,
-            'paketKorisnikaID',
-            'IDpaketKorisnika'
-        );
+        return $this->belongsTo(PaketKorisnika::class, 'paketKorisnikaID');
     }
 }

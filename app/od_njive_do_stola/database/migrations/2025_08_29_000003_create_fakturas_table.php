@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('fakturas', function (Blueprint $table) {
-            $table->bigIncrements('IDfaktura');
+            $table->id('id');
             $table->foreignId('paketKorisnikaID');
             $table->decimal('cena', 10, 2);
             $table->string('tekstFakture', 255)->nullable();

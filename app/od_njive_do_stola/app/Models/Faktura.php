@@ -28,10 +28,6 @@ class Faktura extends Model
 
     public function paketKorisnikaFaktura()
     {
-        return $this->belongsTo(
-            PaketKorisnika::class,
-            'paketKorisnikaID',
-            'IDpaketKorisnika'
-        );
+        return $this->belongsTo(PaketKorisnika::class, 'paketKorisnikaID');
     }
 }

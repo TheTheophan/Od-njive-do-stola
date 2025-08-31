@@ -40,16 +40,12 @@ class User extends Authenticatable
 
     public function gradkorisnika()
     {
-        return $this->belongsTo(Grad::class, 'gradID', 'IDgrad');
+        return $this->belongsTo(Grad::class, 'gradID');
     }
 
     public function poljoprivrednikKorisnika()
     {
-        return $this->belongsTo(
-            Poljoprivrednik::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
-        );
+        return $this->belongsTo(Poljoprivrednik::class, 'poljoprivrednikID');
     }
 
     public function paketKorisnikas()

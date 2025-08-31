@@ -22,10 +22,6 @@ class Slika extends Model
 
     public function poljoprivrednikSlika()
     {
-        return $this->belongsTo(
-            Poljoprivrednik::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
-        );
+        return $this->belongsTo(Poljoprivrednik::class, 'poljoprivrednikID');
     }
 }

@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('paket_korisnikas', function (Blueprint $table) {
-            $table->bigIncrements('IDpaketKorisnika');
+            $table->id('id');
             $table->boolean('godisnjaPretplata')->default(false);
             $table->foreignId('tipPaketaID');
             $table->foreignId('userID');

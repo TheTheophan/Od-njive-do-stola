@@ -27,10 +27,6 @@ class TipPaketa extends Model
 
     public function paketKorisnikas()
     {
-        return $this->hasMany(
-            PaketKorisnika::class,
-            'tipPaketaID',
-            'IDtipPaketa'
-        );
+        return $this->hasMany(PaketKorisnika::class, 'tipPaketaID');
     }
 }

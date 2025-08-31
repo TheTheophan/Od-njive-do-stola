@@ -19,11 +19,11 @@ class Grad extends Model
 
     public function users()
     {
-        return $this->hasMany(User::class, 'gradID', 'IDgrad');
+        return $this->hasMany(User::class, 'gradID');
     }
 
     public function poljoprivredniks()
     {
-        return $this->hasMany(Poljoprivrednik::class, 'gradID', 'IDgrad');
+        return $this->hasMany(Poljoprivrednik::class, 'gradID');
     }
 }

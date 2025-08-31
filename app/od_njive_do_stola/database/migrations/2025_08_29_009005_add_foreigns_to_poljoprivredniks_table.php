@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::table('poljoprivredniks', function (Blueprint $table) {
             $table
                 ->foreign('gradID')
-                ->references('IDgrad')
+                ->references('id')
                 ->on('grads')
                 ->onUpdate('NO ACTION')
                 ->onDelete('NO ACTION');

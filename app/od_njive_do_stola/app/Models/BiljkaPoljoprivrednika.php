@@ -26,24 +26,16 @@ class BiljkaPoljoprivrednika extends Model
 
     public function paketBiljakas()
     {
-        return $this->hasMany(
-            PaketBiljaka::class,
-            'biljkaPoljoprivrednikaID',
-            'IDbiljkaPoljoprivrednika'
-        );
+        return $this->hasMany(PaketBiljaka::class, 'biljkaPoljoprivrednikaID');
     }
 
     public function biljkaBiljkaPoljoprivrednika()
     {
-        return $this->belongsTo(Biljka::class, 'biljkaID', 'IDbiljka');
+        return $this->belongsTo(Biljka::class, 'biljkaID');
     }
 
     public function poljoprivrednikBiljkaPoljoprivrednika()
     {
-        return $this->belongsTo(
-            Poljoprivrednik::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
-        );
+        return $this->belongsTo(Poljoprivrednik::class, 'poljoprivrednikID');
     }
 }

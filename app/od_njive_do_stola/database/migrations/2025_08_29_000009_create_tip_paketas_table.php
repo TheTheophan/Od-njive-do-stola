@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('tip_paketas', function (Blueprint $table) {
-            $table->bigIncrements('IDtipPaketa');
+            $table->id('id');
             $table->decimal('cenaGodisnjePretplate', 10, 2);
             $table->decimal('cenaMesecnePretplate', 10, 2);
             $table->string('opisPaketa', 700);

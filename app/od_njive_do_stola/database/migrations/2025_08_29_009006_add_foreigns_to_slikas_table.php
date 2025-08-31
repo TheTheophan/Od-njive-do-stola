@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::table('slikas', function (Blueprint $table) {
             $table
                 ->foreign('poljoprivrednikID')
-                ->references('IDpoljoprivrednik')
+                ->references('id')
                 ->on('poljoprivredniks')
                 ->onUpdate('NO ACTION')
                 ->onDelete('NO ACTION');

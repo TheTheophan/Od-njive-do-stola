@@ -22,6 +22,36 @@
                         </a>
                         
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            @can('view-any', App\Models\Grad::class)
+                            <a class="dropdown-item" href="{{ route('grads.index') }}">Grads</a>
+                            @endcan
+                            @can('view-any', App\Models\User::class)
+                            <a class="dropdown-item" href="{{ route('users.index') }}">Users</a>
+                            @endcan
+                            @can('view-any', App\Models\Poljoprivrednik::class)
+                            <a class="dropdown-item" href="{{ route('poljoprivredniks.index') }}">Poljoprivredniks</a>
+                            @endcan
+                            @can('view-any', App\Models\Biljka::class)
+                            <a class="dropdown-item" href="{{ route('biljkas.index') }}">Biljkas</a>
+                            @endcan
+                            @can('view-any', App\Models\BiljkaPoljoprivrednika::class)
+                            <a class="dropdown-item" href="{{ route('biljka-poljoprivrednikas.index') }}">Biljka Poljoprivrednikas</a>
+                            @endcan
+                            @can('view-any', App\Models\Faktura::class)
+                            <a class="dropdown-item" href="{{ route('fakturas.index') }}">Fakturas</a>
+                            @endcan
+                            @can('view-any', App\Models\PaketBiljaka::class)
+                            <a class="dropdown-item" href="{{ route('paket-biljakas.index') }}">Paket Biljakas</a>
+                            @endcan
+                            @can('view-any', App\Models\PaketKorisnika::class)
+                            <a class="dropdown-item" href="{{ route('paket-korisnikas.index') }}">Paket Korisnikas</a>
+                            @endcan
+                            @can('view-any', App\Models\Slika::class)
+                            <a class="dropdown-item" href="{{ route('slikas.index') }}">Slikas</a>
+                            @endcan
+                            @can('view-any', App\Models\TipPaketa::class)
+                            <a class="dropdown-item" href="{{ route('tip-paketas.index') }}">Tip Paketas</a>
+                            @endcan
                         </div>
 
                     </li>

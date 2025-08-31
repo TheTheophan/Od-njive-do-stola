@@ -31,33 +31,24 @@ class Poljoprivrednik extends Model
 
     public function gradpoljoprivrednika()
     {
-        return $this->belongsTo(Grad::class, 'gradID', 'IDgrad');
+        return $this->belongsTo(Grad::class, 'gradID');
     }
 
     public function users()
     {
-        return $this->hasMany(
-            User::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
-        );
+        return $this->hasMany(User::class, 'poljoprivrednikID');
     }
 
     public function biljkaPoljoprivrednikas()
     {
         return $this->hasMany(
             BiljkaPoljoprivrednika::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
+            'poljoprivrednikID'
         );
     }
 
     public function slikas()
     {
-        return $this->hasMany(
-            Slika::class,
-            'poljoprivrednikID',
-            'IDpoljoprivrednik'
-        );
+        return $this->hasMany(Slika::class, 'poljoprivrednikID');
     }
 }
