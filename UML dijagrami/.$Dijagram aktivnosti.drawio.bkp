@@ -1,0 +1,199 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="Mk0SVqg6Y9VWB_AF7rnx">
+    <mxGraphModel dx="655" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="405" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-3" value="Prijava na sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-3" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-5" value="Uspešno?" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="210" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-6" value="NE" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-5" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="560" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-7" value="DA" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-5" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="420" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-8" value="Prikaži grešku" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="210" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-12" value="Pregled dostupnih paketa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="310" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-13" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-12" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-14" value="Odabir željenog paketa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-14" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-16" value="Unos podataka za dostavu" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="510" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-17" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-16" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-18" value="Svi podaci su ispravni?" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="610" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-19" value="NE" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-18" parent="1">
+          <mxGeometry x="-0.5031" relative="1" as="geometry">
+            <mxPoint x="560" y="650" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-20" value="DA" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-18" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="420" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-21" value="Korigovanje podataka" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="630" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-22" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-21" parent="1" target="3htCd6F4rnlMjq0S3QB5-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-23" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3htCd6F4rnlMjq0S3QB5-8" target="3htCd6F4rnlMjq0S3QB5-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="120" as="targetPoint" />
+            <mxPoint x="620" y="200" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="620" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-24" value="Kreiranje porudžbine" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="730" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-25" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-24" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-26" value="Korisnik želi&amp;nbsp;&lt;div&gt;izmenu?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="830" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-27" value="DA" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-26" parent="1" target="3htCd6F4rnlMjq0S3QB5-29">
+          <mxGeometry x="-0.2727" y="5" relative="1" as="geometry">
+            <mxPoint x="640" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="875" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-28" value="NE" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-26" parent="1">
+          <mxGeometry x="-0.975" y="-20" relative="1" as="geometry">
+            <mxPoint x="420" y="1720" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-29" value="Proces obrade zahteva" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="920" width="300" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-31" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-29" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1740" />
+              <mxPoint x="450" y="1740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-32" value="Administrator prihvata zahtev" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="960" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-33" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-32" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-34" value="Provera detalja porudžbine" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1060" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-35" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-34" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-36" value="Izmena je moguća?" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1160" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-37" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-36" parent="1">
+          <mxGeometry x="-0.5789" y="5" relative="1" as="geometry">
+            <mxPoint x="580" y="1440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="1185" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-38" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-36" parent="1">
+          <mxGeometry x="-0.0533" y="-25" relative="1" as="geometry">
+            <mxPoint x="500" y="1220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-39" value="Izmena odgovarajućih podataka" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-40" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-39" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-41" value="Ažuriranje/čuvanje podataka" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-42" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-41" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-43" value="Slanje povratne informacije korisniku" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-44" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="3htCd6F4rnlMjq0S3QB5-43" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3htCd6F4rnlMjq0S3QB5-47" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1720" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
