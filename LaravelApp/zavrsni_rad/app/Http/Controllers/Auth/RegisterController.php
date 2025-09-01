@@ -52,10 +52,6 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'adresaDostave' => ['required', 'string', 'max:255'],
-            'brojTelefona' => ['required', 'string', 'max:20'],
-            'postanskiBroj' => ['required', 'string', 'max:20'],
-            'gradID' => ['required', 'integer', 'exists:grads,IDgrad'],
         ]);
     }
 
@@ -71,21 +67,6 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'adresaDostave' => $data['adresaDostave'] ?? null,
-            'brojTelefona' => $data['brojTelefona'] ?? null,
-            'postanskiBroj' => $data['postanskiBroj'] ?? null,
-            'gradID' => $data['gradID'],
         ]);
-    }
-
-    /**
-     * Show the registration form.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function showRegistrationForm()
-    {
-        $grads = \App\Models\Grad::all();
-        return view('auth.register', compact('grads'));
     }
 }

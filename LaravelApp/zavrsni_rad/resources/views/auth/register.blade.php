@@ -61,61 +61,6 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="adresaDostave" class="col-md-4 col-form-label text-md-end">Adresa dostave</label>
-                            <div class="col-md-6">
-                                <input id="adresaDostave" type="text" class="form-control @error('adresaDostave') is-invalid @enderror" name="adresaDostave" value="{{ old('adresaDostave') }}">
-                                @error('adresaDostave')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="brojTelefona" class="col-md-4 col-form-label text-md-end">Broj telefona</label>
-                            <div class="col-md-6">
-                                <input id="brojTelefona" type="text" class="form-control @error('brojTelefona') is-invalid @enderror" name="brojTelefona" value="{{ old('brojTelefona') }}">
-                                @error('brojTelefona')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="postanskiBroj" class="col-md-4 col-form-label text-md-end">Poštanski broj</label>
-                            <div class="col-md-6">
-                                <input id="postanskiBroj" type="text" class="form-control @error('postanskiBroj') is-invalid @enderror" name="postanskiBroj" value="{{ old('postanskiBroj') }}">
-                                @error('postanskiBroj')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="gradID" class="col-md-4 col-form-label text-md-end">Grad</label>
-                            <div class="col-md-6">
-                                <select id="gradID" name="gradID" class="form-control @error('gradID') is-invalid @enderror" required>
-                                    <option value="">Odaberite grad</option>
-                                    @foreach($grads as $grad)
-                                        <option value="{{ $grad->IDgrad }}" {{ old('gradID') == $grad->IDgrad ? 'selected' : '' }}>
-                                            {{ $grad->nazivGrada }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                @error('gradID')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
