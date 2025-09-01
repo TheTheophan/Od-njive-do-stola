@@ -6,7 +6,7 @@
             name="cena_godisnje_pretplate"
             label="Cena Godisnje Pretplate"
             :value="old('cena_godisnje_pretplate', ($editing ? $tipPaketa->cena_godisnje_pretplate : ''))"
-            max="255"
+            max="99999999"
             step="0.01"
             placeholder="Cena Godisnje Pretplate"
         ></x-inputs.number>
@@ -17,7 +17,7 @@
             name="cena_mesecne_pretplate"
             label="Cena Mesecne Pretplate"
             :value="old('cena_mesecne_pretplate', ($editing ? $tipPaketa->cena_mesecne_pretplate : ''))"
-            max="255"
+            max="99999999"
             step="0.01"
             placeholder="Cena Mesecne Pretplate"
         ></x-inputs.number>

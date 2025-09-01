@@ -20,7 +20,7 @@
             name="cena"
             label="Cena"
             :value="old('cena', ($editing ? $faktura->cena : ''))"
-            max="255"
+            max="99999999"
             step="0.01"
             placeholder="Cena"
         ></x-inputs.number>
