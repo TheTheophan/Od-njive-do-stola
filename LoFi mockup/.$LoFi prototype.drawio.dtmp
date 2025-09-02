@@ -313,7 +313,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LKPyuFg8WttQn_hXi48R" name="Story-board (Toni hrani porodicu)">
-    <mxGraphModel dx="1206" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2929" dy="1474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -586,7 +586,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="81y8c38Glu2HEG13xsTZ-45" value="Toni je uspešno obezbedio&lt;div&gt;namirnice za celu godinu&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="81y8c38Glu2HEG13xsTZ-44">
+        <mxCell id="81y8c38Glu2HEG13xsTZ-45" value="Toni je redirektovan na&amp;nbsp;&lt;div&gt;stranicu sa potvrdom pretplate&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="81y8c38Glu2HEG13xsTZ-44">
           <mxGeometry x="0.4497" y="-8" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
