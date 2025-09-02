@@ -179,11 +179,77 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="fzNgZNnQgWY_bUgjSKLW" name="Page-4">
-    <mxGraphModel dx="1025" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="fzNgZNnQgWY_bUgjSKLW" name="TipPaketa(Admin)">
+    <mxGraphModel dx="1079" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="760" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="760" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.smiley" vertex="1" parent="1">
+          <mxGeometry x="70" y="140" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-4" value="Od njive do stola" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="145" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-5" value="[Paketi] [Profil] [Pretplate] [Izloguj se]" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="145" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="710" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="210" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="210" width="230" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="210" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-25" value="Cena (mesečna)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="190" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-26" value="Cena(godišnja)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="190" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-27" value="Opis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="190" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-28" value="Naziv" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-31" value="Podatak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-32" value="Podatak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="210" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-33" value="Podatak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="210" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-34" value="Podatak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="230" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-35" value="Podatak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="230" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-36" value="Izmeni" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="520" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-37" value="Obriši" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="520" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-K3C3dfQ-VNk3w2EAHVQ-38" value="Dodaj" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="520" width="90" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
