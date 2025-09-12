@@ -1,8 +1,12 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-2">
     <div class="container">
-        
-        <a class="navbar-brand text-primary font-weight-bold text-uppercase" href="{{ url('/') }}">
-            ZavrsniRad
+
+        <a class="navbar-brand text-success font-weight-bold text-uppercase d-flex align-items-center" href="{{ url('/') }}">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo align-middle mr-2" style="height: 2.2em; width: auto; vertical-align: middle;">
+            <span>
+                Od Njive <br>
+                Do Stola
+            </span>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -16,27 +20,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Početna</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            Apps <span class="caret"></span>
-                        </a>
-                        
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            @can('view-any', App\Models\Faktura::class)
-                            <a class="dropdown-item" href="{{ route('fakturas.index') }}">Fakturas</a>
-                            @endcan
-                            @can('view-any', App\Models\PaketKorisnika::class)
-                            <a class="dropdown-item" href="{{ route('paket-korisnikas.index') }}">Paket Korisnikas</a>
-                            @endcan
-                            @can('view-any', App\Models\TipPaketa::class)
-                            <a class="dropdown-item" href="{{ route('tip-paketas.index') }}">Tip Paketas</a>
-                            @endcan
-                            @can('view-any', App\Models\User::class)
-                            <a class="dropdown-item" href="{{ route('users.index') }}">Users</a>
-                            @endcan
-                        </div>
-
-                    </li>
+                    @can('view-any', App\Models\Faktura::class)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('fakturas.index') }}">Fakture</a>
+                        </li>
+                    @endcan
+                    @can('view-any', App\Models\PaketKorisnika::class)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Paketi Korisnika</a>
+                        </li>
+                    @endcan
+                    @can('view-any', App\Models\TipPaketa::class)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('tip-paketas.index') }}">Tipovi Paketa</a>
+                        </li>
+                    @endcan
+                    @can('view-any', App\Models\User::class)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('users.index') }}">Korisnici</a>
+                        </li>
+                    @endcan
                 @endauth
             </ul>
 
@@ -45,11 +48,11 @@
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="nav-link" href="{{ route('login') }}">{{ __('Prijava') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registracija') }}</a>
                         </li>
                     @endif
                 @else
