@@ -34,6 +34,37 @@
         
             <main class="py-4">
                 @yield('content')
+
+
+
+                <div class="container mx-auto px-4">
+                    <h1 class="text-3xl font-bold my-6">Dobrodošli! </h1>
+                    <p class="mb-8">
+                        Trenutno ste na platformi "Od njive do stola". Ovde možete pronaći najbolje pakete koji vam obezbeđuju dostavu svežih namirnica iz domaće proizvodnje. Postoji ponuda svaku količinu namirnica koja vam može zatrebati. Da bi ste se pretplatili registrujte se i uživajte u zdravim obrocima svake nedelje, bez sumnje o kvalitetu i poreklu namirnica jer vam mi garantujemo oba.
+                    </p>
+
+                    <div class="row justify-content-center">
+                        @foreach (\App\Models\TipPaketa::take(6)->get() as $paket)
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title ">{{ $paket->naziv }}</h5>
+                                        <p class="card-text">{{ $paket->opis }}</p>
+                                        <h6 class="card-subtitle mb-2 fw-bold text-dark" style="font-size:1.1rem; letter-spacing:0.5px;">Cena pretplate</h6>
+                                        <ul class="list-unstyled mb-3">
+                                            <li><strong>mesečna:</strong> {{ number_format($paket->cena_mesecne_pretplate, 0, ',', '.') }} RSD</li>
+                                            <li><strong>godišnja:</strong> {{ number_format($paket->cena_godisnje_pretplate, 0, ',', '.') }} RSD</li>
+                                        </ul>
+                                        @auth
+                                            <button class="btn btn-primary mt-auto">Pretplati se</button>
+                                        @endauth
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
             </main>
         </div>
 

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-2">
     <div class="container">
 
-        <a class="navbar-brand text-success font-weight-bold text-uppercase d-flex align-items-center" href="{{ url('/') }}">
+        <a class="navbar-brand text-success font-weight-bold text-uppercase d-flex align-items-center" href="{{ url('/home') }}">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo align-middle mr-2" style="height: 2.2em; width: auto; vertical-align: middle;">
             <span>
                 Od Njive <br>
