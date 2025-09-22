@@ -20,26 +20,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Početna</a>
                     </li>
-                    @can('view-any', App\Models\Faktura::class)
+                    @if (Auth::user()->email === 'admin@admin.com')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('fakturas.index') }}">Fakture</a>
                         </li>
-                    @endcan
-                    @can('view-any', App\Models\PaketKorisnika::class)
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Paketi Korisnika</a>
                         </li>
-                    @endcan
-                    @can('view-any', App\Models\TipPaketa::class)
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('tip-paketas.index') }}">Tipovi Paketa</a>
                         </li>
-                    @endcan
-                    @can('view-any', App\Models\User::class)
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('users.index') }}">Korisnici</a>
                         </li>
-                    @endcan
+                    @endif
                 @endauth
             </ul>
 

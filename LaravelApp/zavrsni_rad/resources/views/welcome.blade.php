@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="text-center my-4">
-                        <h3>Da bi ste se videli celu ponudu i pretplatili se na paket morate biti registrovani korisnik.</h3>
+                        <h3>Da bi ste videli celu ponudu i pretplatili se na paket morate biti registrovani korisnik i da se ulogujete ako niste.</h3>
                     </div>
 
 
