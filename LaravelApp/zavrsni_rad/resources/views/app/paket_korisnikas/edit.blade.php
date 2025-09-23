@@ -11,12 +11,15 @@
                 @lang('crud.paket_korisnikas.edit_title')
             </h4>
 
+            @php
+                $isAdmin = auth()->user() && auth()->user()->email === 'admin@admin.com';
+            @endphp
             <x-form
                 method="PUT"
                 action="{{ route('paket-korisnikas.update', $paketKorisnika) }}"
                 class="mt-4"
             >
-                @include('app.paket_korisnikas.form-inputs')
+                @include('app.paket_korisnikas.form-inputs', ['readOnly' => !$isAdmin])
 
                 <div class="mt-4">
                     <a
@@ -27,18 +30,20 @@
                         @lang('crud.common.back')
                     </a>
 
-                    <a
-                        href="{{ route('paket-korisnikas.create') }}"
-                        class="btn btn-light"
-                    >
-                        <i class="icon ion-md-add text-primary"></i>
-                        @lang('crud.common.create')
-                    </a>
+                    @if($isAdmin)
+                        <a
+                            href="{{ route('paket-korisnikas.create') }}"
+                            class="btn btn-light"
+                        >
+                            <i class="icon ion-md-add text-primary"></i>
+                            @lang('crud.common.create')
+                        </a>
 
-                    <button type="submit" class="btn btn-primary float-right">
-                        <i class="icon ion-md-save"></i>
-                        @lang('crud.common.update')
-                    </button>
+                        <button type="submit" class="btn btn-primary float-right">
+                            <i class="icon ion-md-save"></i>
+                            @lang('crud.common.update')
+                        </button>
+                    @endif
                 </div>
             </x-form>
         </div>
