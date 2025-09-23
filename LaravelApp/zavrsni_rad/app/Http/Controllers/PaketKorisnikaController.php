@@ -143,6 +143,9 @@ class PaketKorisnikaController extends Controller
     ): RedirectResponse {
         $this->authorize('delete', $paketKorisnika);
 
+        // Delete related fakturas first
+        $paketKorisnika->fakturas()->delete();
+
         $paketKorisnika->delete();
 
         return redirect()
