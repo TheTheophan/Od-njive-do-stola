@@ -24,11 +24,11 @@ return [
 
     'fakturas' => [
         'name' => 'Fakturas',
-        'index_title' => 'Fakturas List',
-        'new_title' => 'New Faktura',
-        'create_title' => 'Create Faktura',
-        'edit_title' => 'Edit Faktura',
-        'show_title' => 'Show Faktura',
+        'index_title' => 'Lista faktura',
+        'new_title' => 'Nova faktura',
+        'create_title' => 'Kreiraj fakturu',
+        'edit_title' => 'Izmeni fakturu',
+        'show_title' => 'Prikaži fakturu',
         'inputs' => [
             'paket_korisnika_id' => 'Paket Korisnika',
             'cena' => 'Cena',
@@ -39,11 +39,11 @@ return [
 
     'paket_korisnikas' => [
         'name' => 'Paket Korisnikas',
-        'index_title' => 'PaketKorisnikas List',
-        'new_title' => 'New Paket korisnika',
-        'create_title' => 'Create PaketKorisnika',
-        'edit_title' => 'Edit PaketKorisnika',
-        'show_title' => 'Show PaketKorisnika',
+        'index_title' => 'Lista paketa korisnika',
+        'new_title' => 'Novi paket korisnika',
+        'create_title' => 'Kreiraj paket korisnika',
+        'edit_title' => 'Izmeni paket korisnika',
+        'show_title' => 'Prikaži paket korisnika',
         'inputs' => [
             'godisnja_pretplata' => 'Godisnja Pretplata',
             'tip_paketa_id' => 'Tip Paketa',
@@ -57,11 +57,11 @@ return [
 
     'tip_paketas' => [
         'name' => 'Tip Paketas',
-        'index_title' => 'TipPaketas List',
-        'new_title' => 'New Tip paketa',
-        'create_title' => 'Create TipPaketa',
-        'edit_title' => 'Edit TipPaketa',
-        'show_title' => 'Show TipPaketa',
+        'index_title' => 'Lista tipova paketa',
+        'new_title' => 'Novi tip paketa',
+        'create_title' => 'Kreiraj tip paketa',
+        'edit_title' => 'Izmeni tip paketa',
+        'show_title' => 'Prikaži tip paketa',
         'inputs' => [
             'cena_godisnje_pretplate' => 'Cena Godisnje Pretplate',
             'cena_mesecne_pretplate' => 'Cena Mesecne Pretplate',
@@ -72,15 +72,15 @@ return [
 
     'users' => [
         'name' => 'Users',
-        'index_title' => 'Users List',
-        'new_title' => 'New User',
-        'create_title' => 'Create User',
-        'edit_title' => 'Edit User',
-        'show_title' => 'Show User',
+        'index_title' => 'Lista korisnika',
+        'new_title' => 'Novi korisnik',
+        'create_title' => 'Kreiraj korisnika',
+        'edit_title' => 'Izmeni korisnika',
+        'show_title' => 'Prikaži korisnika',
         'inputs' => [
-            'name' => 'Name',
+            'name' => 'Ime',
             'email' => 'Email',
-            'password' => 'Password',
+            'password' => 'Lozinka',
         ],
     ],
 ];

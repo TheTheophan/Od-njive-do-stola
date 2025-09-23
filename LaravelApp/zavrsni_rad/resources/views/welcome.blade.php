@@ -64,14 +64,14 @@
                                         <div class="mt-auto">
                                             <div class="d-flex align-items-stretch justify-content-center mb-2" style="gap:1.5rem;">
                                                 <div class="d-flex flex-column align-items-center" style="flex:1;">
-                                                    <span class="fw-bold text-dark" style="font-size:1.15rem;">Mesečna</span>
+                                                    <span class="fw-bold text-dark" style="font-size:1.15rem;">Mesečno</span>
                                                     <span class="fw-bold text-primary" style="font-size:2.2rem; line-height:1;">{{ number_format($paket->cena_mesecne_pretplate, 0, ',', '.') }} RSD</span>
                                                 </div>
                                                 <div class="d-flex flex-column align-items-center justify-content-center" style="padding:0 1rem;">
                                                     <span style="font-size:2.2rem; color:#FF760F; font-weight:bold;">/</span>
                                                 </div>
                                                 <div class="d-flex flex-column align-items-center" style="flex:1;">
-                                                    <span class="fw-bold text-dark" style="font-size:1.15rem;">Godišnja</span>
+                                                    <span class="fw-bold text-dark" style="font-size:1.15rem;">Godišnje</span>
                                                     <span class="fw-bold text-success" style="font-size:2.2rem; line-height:1;">{{ number_format($paket->cena_godisnje_pretplate, 0, ',', '.') }} RSD</span>
                                                 </div>
                                             </div>

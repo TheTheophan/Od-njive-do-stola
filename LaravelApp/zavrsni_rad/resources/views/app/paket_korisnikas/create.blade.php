@@ -22,14 +22,14 @@
                     <div class="mt-auto">
                         <div class="d-flex align-items-stretch justify-content-center mb-2" style="gap:1.5rem;">
                             <div class="d-flex flex-column align-items-center" style="flex:1;">
-                                <span class="fw-bold text-dark" style="font-size:1.15rem;">Mesečna</span>
+                                <span class="fw-bold text-dark" style="font-size:1.15rem;">Mesečno</span>
                                 <span class="fw-bold text-primary" style="font-size:2.2rem; line-height:1;">{{ number_format($tipPaketaObj->cena_mesecne_pretplate, 0, ',', '.') }} RSD</span>
                             </div>
                             <div class="d-flex flex-column align-items-center justify-content-center" style="padding:0 1rem;">
                                 <span style="font-size:2.2rem; color:#FF760F; font-weight:bold;">/</span>
                             </div>
                             <div class="d-flex flex-column align-items-center" style="flex:1;">
-                                <span class="fw-bold text-dark" style="font-size:1.15rem;">Godišnja</span>
+                                <span class="fw-bold text-dark" style="font-size:1.15rem;">Godišnje</span>
                                 <span class="fw-bold text-success" style="font-size:2.2rem; line-height:1;">{{ number_format($tipPaketaObj->cena_godisnje_pretplate, 0, ',', '.') }} RSD</span>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
             <div class="mt-3">
                 <div class="alert alert-info" style="border-radius: 12px;">
                     <p class="mb-1">
-                        Dostava paketa se vrši jednom nedeljno. Dan dostave je <strong>subota</strong> osim ako nije vanredna situacija kada se može desiti da je dostava nedelja medjutim u tom slučaju ćete biti blagovremeno obavešteni. Uz mesečni plan pretplate dobijate 4 dostave tokom meseca, dok godišnji plan obuhvata 10 meseci dostava (ukupno 40 dostava godišnje). U toku januara i februara nije moguća pretplata. U slučaju praznika ili vanrednih situacija, moguća je promena vremena ili datuma dostave, o čemu ćete biti blagovremeno obavešteni putem elektronske pošte. Pretplata na mesečni plan se ne obnavlja automatski, kada istekne morate se ponovo pretplatiti na paket.
+                        Dostava paketa se vrši jednom nedeljno. Dan dostave je <strong>subota</strong> osim ako nije vanredna situacija kada se može desiti da je dostava nedelja medjutim u tom slučaju ćete biti blagovremeno obavešteni. Uz mesečni plan pretplate dobijate <strong>4 dostave</strong>  tokom <strong> meseca</strong>, dok godišnji plan obuhvata <strong>10 meseci</strong> dostava (ukupno 40 dostava godišnje). U toku januara i februara nije moguća pretplata. U slučaju praznika ili vanrednih situacija, moguća je promena vremena ili datuma dostave, o čemu ćete biti blagovremeno obavešteni putem elektronske pošte. Pretplata na mesečni plan se ne obnavlja automatski, kada istekne morate se ponovo pretplatiti na paket.
                     </p>
                 </div>
             </div>
@@ -52,9 +52,15 @@
             <div class="card" style="border-radius: 16px; min-width:320px; max-width:100%;">
                 <div class="card-body" style="padding:1.5rem 1.2rem;">
                     <h4 class="card-title d-flex align-items-center" style="margin-bottom:1.2rem;">
-                        <a href="{{ route('paket-korisnikas.index') }}" class="mr-4">
-                            <i class="icon ion-md-arrow-back"></i>
-                        </a>
+                        @if(auth()->user() && auth()->user()->email === 'admin@admin.com')
+                            <a href="{{ route('paket-korisnikas.index') }}" class="mr-4">
+                                <i class="icon ion-md-arrow-back"></i>
+                            </a>
+                        @else
+                            <a href="{{ route('home') }}" class="mr-4">
+                                <i class="icon ion-md-arrow-back"></i>
+                            </a>
+                        @endif
                         <div class="flex-grow-1 text-center">
                             <h1 class="mb-0" style="font-size:1.5rem;">Unesite podatke</h1>
                         </div>
@@ -86,6 +92,18 @@
 
                         @include('app.paket_korisnikas.form-inputs')
 
+                        <!-- Mock Payment Processor Box (below postanski broj) -->
+                        <div class="form-group mt-3">
+                            <div class="card border-info" style="border-radius: 12px;">
+                                <div class="card-body text-center text-info">
+                                    <i class="icon ion-md-card" style="font-size:2rem;"></i>
+                                    <p class="mb-0 mt-2" style="font-size:1.1rem;">
+                                        Procesor plaćanja dolazi uskoro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="mt-4">
                             <a
                                 href="{{ route('paket-korisnikas.index') }}"
@@ -96,8 +114,13 @@
                             </a>
 
                             <button type="submit" class="btn btn-primary float-right">
-                                <i class="icon ion-md-save"></i>
-                                @lang('crud.common.create')
+                                @if(auth()->user() && auth()->user()->email === 'admin@admin.com')
+                                    <i class="icon ion-md-save"></i>
+                                    @lang('crud.common.create')
+                                @else
+                                    <i class="icon ion-md-card"></i>
+                                    Plati
+                                @endif
                             </button>
                         </div>
                     </x-form>

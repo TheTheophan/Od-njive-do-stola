@@ -37,6 +37,18 @@
             </main>
         </div>
 
+        <footer class="bg-light text-center py-3 mt-4 border-top">
+            <div class="d-flex align-items-center justify-content-center mb-2">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" style="height:24px; margin-right:6px;">
+                <strong>Od Njive Do Stola™</strong>
+            </div>
+            <div>
+                <span>Telefon: +381 99 123 4567</span> |
+                <span>Email: info@odnjivedostola.rs</span> |
+                <span>Adresa: Ulica povrća 15, 11070 Beograd</span>
+            </div>
+        </footer>
+
         @stack('modals')
         
         @livewireScripts
