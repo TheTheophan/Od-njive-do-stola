@@ -9,25 +9,29 @@
         ></x-inputs.checkbox>
     </x-inputs.group>
 
-    <x-inputs.group class="col-sm-12">
-        <x-inputs.select name="tip_paketa_id" label="Tip Paketa" required>
-            @php $selected = old('tip_paketa_id', ($editing ? $paketKorisnika->tip_paketa_id : '')) @endphp
-            <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Tip Paketa</option>
-            @foreach($tipPaketas as $value => $label)
-            <option value="{{ $value }}" {{ $selected == $value ? 'selected' : '' }} >{{ $label }}</option>
-            @endforeach
-        </x-inputs.select>
-    </x-inputs.group>
+    @if(!isset($lockedTipPaketaId))
+        <x-inputs.group class="col-sm-12">
+            <x-inputs.select name="tip_paketa_id" label="Tip Paketa" required>
+                @php $selected = old('tip_paketa_id', ($editing ? $paketKorisnika->tip_paketa_id : '')) @endphp
+                <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Tip Paketa</option>
+                @foreach($tipPaketas as $value => $label)
+                <option value="{{ $value }}" {{ $selected == $value ? 'selected' : '' }} >{{ $label }}</option>
+                @endforeach
+            </x-inputs.select>
+        </x-inputs.group>
+    @endif
 
-    <x-inputs.group class="col-sm-12">
-        <x-inputs.select name="user_id" label="User" required>
-            @php $selected = old('user_id', ($editing ? $paketKorisnika->user_id : '')) @endphp
-            <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the User</option>
-            @foreach($users as $value => $label)
-            <option value="{{ $value }}" {{ $selected == $value ? 'selected' : '' }} >{{ $label }}</option>
-            @endforeach
-        </x-inputs.select>
-    </x-inputs.group>
+    @if(!isset($lockedUserId))
+        <x-inputs.group class="col-sm-12">
+            <x-inputs.select name="user_id" label="User" required>
+                @php $selected = old('user_id', ($editing ? $paketKorisnika->user_id : '')) @endphp
+                <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the User</option>
+                @foreach($users as $value => $label)
+                <option value="{{ $value }}" {{ $selected == $value ? 'selected' : '' }} >{{ $label }}</option>
+                @endforeach
+            </x-inputs.select>
+        </x-inputs.group>
+    @endif
 
     <x-inputs.group class="col-sm-12">
         <x-inputs.text

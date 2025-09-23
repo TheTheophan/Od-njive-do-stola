@@ -16,6 +16,26 @@
                 action="{{ route('paket-korisnikas.store') }}"
                 class="mt-4"
             >
+                @php
+                    $lockedTipPaketa = isset($lockedTipPaketaId) ? $tipPaketas[$lockedTipPaketaId] ?? null : null;
+                    $lockedUser = isset($lockedUserId) ? $users[$lockedUserId] ?? null : null;
+                @endphp
+
+                @if($lockedTipPaketa)
+                    <div class="form-group">
+                        <label>Tip Paketa</label>
+                        <input type="text" class="form-control" value="{{ $lockedTipPaketa }}" readonly>
+                        <input type="hidden" name="tip_paketa_id" value="{{ $lockedTipPaketaId }}">
+                    </div>
+                @endif
+                @if($lockedUser)
+                    <div class="form-group">
+                        <label>Korisnik</label>
+                        <input type="text" class="form-control" value="{{ $lockedUser }}" readonly>
+                        <input type="hidden" name="user_id" value="{{ $lockedUserId }}">
+                    </div>
+                @endif
+
                 @include('app.paket_korisnikas.form-inputs')
 
                 <div class="mt-4">

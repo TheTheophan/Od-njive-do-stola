@@ -43,9 +43,13 @@ class PaketKorisnikaController extends Controller
         $tipPaketas = TipPaketa::pluck('naziv', 'id');
         $users = User::pluck('name', 'id');
 
+        // Lock in selected packet and user if provided
+        $lockedTipPaketaId = $request->get('tip_paketa_id');
+        $lockedUserId = auth()->id();
+
         return view(
             'app.paket_korisnikas.create',
-            compact('tipPaketas', 'users')
+            compact('tipPaketas', 'users', 'lockedTipPaketaId', 'lockedUserId')
         );
     }
 
@@ -58,7 +62,28 @@ class PaketKorisnikaController extends Controller
 
         $validated = $request->validated();
 
+        // Lock in user and tip_paketa if present
+        if (isset($validated['tip_paketa_id']) && $request->has('lockedTipPaketaId')) {
+            $validated['tip_paketa_id'] = $request->input('lockedTipPaketaId');
+        }
+        if ($request->has('lockedUserId')) {
+            $validated['user_id'] = $request->input('lockedUserId');
+        } else {
+            $validated['user_id'] = auth()->id();
+        }
+
         $paketKorisnika = PaketKorisnika::create($validated);
+
+        // Create Faktura for this PaketKorisnika
+        $tipPaketa = TipPaketa::find($paketKorisnika->tip_paketa_id);
+        $godisnja = $paketKorisnika->godisnja_pretplata;
+        $cena = $godisnja ? $tipPaketa->cena_godisnje_pretplate : $tipPaketa->cena_mesecne_pretplate;
+        \App\Models\Faktura::create([
+            'paket_korisnika_id' => $paketKorisnika->id,
+            'cena' => $cena,
+            'tekst' => '',
+            'placeno' => false,
+        ]);
 
         return redirect()
             ->route('paket-korisnikas.edit', $paketKorisnika)

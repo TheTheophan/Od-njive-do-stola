@@ -18,7 +18,7 @@
             <ul class="navbar-nav mr-auto">
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">Početna</a>
+                        <a class="nav-link" href="{{ route('home') }}">Paketi</a>
                     </li>
                     @if (Auth::user()->email === 'admin@admin.com')
                         <li class="nav-item">

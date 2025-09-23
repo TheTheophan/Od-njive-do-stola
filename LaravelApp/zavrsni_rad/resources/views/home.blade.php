@@ -61,7 +61,11 @@
                                     </div>
                                 </div>
                                 @auth
-                                    <button class="btn w-100 py-2" style="background:#FF760F; color:#fff; font-weight:bold; border:none; font-size:1.15rem;">Pretplati se</button>
+                                    <!--<button class="btn w-100 py-2" style="background:#FF760F; color:#fff; font-weight:bold; border:none; font-size:1.15rem;">Pretplati se</button>-->
+
+                                    <a href="{{ route('paket-korisnikas.create', ['tip_paketa_id' => $paket->id]) }}" class="btn w-100 py-2" style="background:#FF760F; color:#fff; font-weight:bold; border:none; font-size:1.15rem;">
+                                        Pretplati se
+                                    </a>
                                 @endauth
                             </div>
                         </div>
