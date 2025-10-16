@@ -8,7 +8,15 @@
                 <a href="{{ route('paket-korisnikas.index') }}" class="mr-4"
                     ><i class="icon ion-md-arrow-back"></i
                 ></a>
-                @lang('crud.paket_korisnikas.edit_title')
+                @php
+                    $isAdmin = auth()->user() && auth()->user()->email === 'admin@admin.com';
+                @endphp
+                @if($isAdmin)
+                    @lang('crud.paket_korisnikas.edit_title')
+                @else
+                    Pregled porucenog paketa
+                @endif
+
             </h4>
 
             @php
