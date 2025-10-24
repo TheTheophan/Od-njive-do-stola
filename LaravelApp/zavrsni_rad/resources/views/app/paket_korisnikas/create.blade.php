@@ -37,7 +37,6 @@
                 </div>
             </div>
 
-            <!-- Info paragraph below the packet card -->
             <div class="mt-3">
                 <div class="alert alert-info" style="border-radius: 12px;">
                     <p class="mb-1">

@@ -24,8 +24,8 @@
             @endphp
 
             @if($isAdmin)
-                {{-- Admin: keep original single-column layout with editable form --}}
-                <x-form
+
+            <x-form
                     method="PUT"
                     action="{{ route('paket-korisnikas.update', $paketKorisnika) }}"
                     class="mt-4"
@@ -55,8 +55,10 @@
                         </button>
                     </div>
                 </x-form>
+                
+            </div>
+
             @else
-                {{-- Regular user: show read-only form on the left and receipt preview on the right --}}
                 <div class="row">
                     <div class="col-md-7">
                         <div class="card" style="border-radius:16px">
@@ -77,10 +79,27 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-md-5">
-                        {{-- Receipt / Faktura preview --}}
+
+                        <div class="">
+                            <div class="alert alert-info" style="border-radius: 12px;">
+                                <p class="mb-1">
+                                    Ukoliko je neki podatak netačan ili želite da izmenite unešene podatke, možete nas kontaktirati putem naše elektronske pošte sa adresom
+                                    <strong>info@odnjivedostola.rs</strong>
+                                    ili pozivom na broj telefona
+                                    <strong>+381 99 123 4567</strong>
+                                    radnim danima ili subotom od
+                                    <strong>7 do 18 časova</strong>
+                                    kako bismo azurirali podatke o vašoj pretplati.
+                                </p>
+                            </div>
+                        </div>
+
+
                         <div class="card" style="border-radius:16px;">
+
+                            
                             <div style="background:#29A645; color:#fff; padding:0.75rem; text-align:center; border-top-left-radius:16px; border-top-right-radius:16px;">
                                 <h5 class="m-0" style="font-weight:bold;">Faktura</h5>
                             </div>
@@ -124,6 +143,9 @@
                             </div>
                         </div>
                     </div>
+
+                    
+
                 </div>
             @endif
         </div>
