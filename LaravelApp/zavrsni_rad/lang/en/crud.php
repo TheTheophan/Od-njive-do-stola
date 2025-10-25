@@ -39,19 +39,19 @@ return [
 
     'paket_korisnikas' => [
         'name' => 'Paket Korisnikas',
-        'index_title' => 'Lista paketa korisnika',
+        'index_title' => 'Lista poručenih paketa',
         'new_title' => 'Novi paket korisnika',
         'create_title' => 'Kreiraj paket korisnika',
         'edit_title' => 'Izmeni paket korisnika',
         'show_title' => 'Prikaži paket korisnika',
         'inputs' => [
-            'godisnja_pretplata' => 'Godisnja Pretplata',
+            'godisnja_pretplata' => 'Godišnja pretplata',
             'tip_paketa_id' => 'Tip Paketa',
-            'user_id' => 'User',
+            'user_id' => 'Korisnik',
             'adresa' => 'Adresa',
-            'uputstvo_za_dostavu' => 'Uputstvo Za Dostavu',
-            'broj_telefona' => 'Broj Telefona',
-            'postanski_broj' => 'Postanski Broj',
+            'uputstvo_za_dostavu' => 'Uputstvo za dostavu',
+            'broj_telefona' => 'Broj telefona',
+            'postanski_broj' => 'Poštanski broj',
         ],
     ],
 

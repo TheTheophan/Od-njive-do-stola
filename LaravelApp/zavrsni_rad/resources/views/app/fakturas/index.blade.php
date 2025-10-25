@@ -75,7 +75,7 @@
                                 {{ optional($faktura->paketKorisnika)->adresa ??
                                 '-' }}
                             </td>
-                            <td>{{ $faktura->cena ?? '-' }}</td>
+                            <td class="text-right">{{ $faktura->cena ? number_format($faktura->cena, 2, ',', '.') . ' RSD' : '-' }}</td>
                             <td>{{ $faktura->tekst ?? '-' }}</td>
                             <td>{{ $faktura->placeno ?? '-' }}</td>
                             <td class="text-center" style="width: 134px;">

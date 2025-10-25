@@ -75,7 +75,11 @@
                                 @lang('crud.paket_korisnikas.inputs.postanski_broj')
                             </th>
                             <th class="text-center">
-                                @lang('crud.common.actions')
+                                @if(optional(auth()->user())->email === 'admin@admin.com')
+                                    @lang('crud.common.actions')
+                                @else
+                                    Pregled
+                                @endif
                             </th>
                         </tr>
                     </thead>
@@ -108,43 +112,41 @@
                                     aria-label="Row Actions"
                                     class="btn-group"
                                 >
-                                    @can('update', $paketKorisnika)
-                                    <a
-                                        href="{{ route('paket-korisnikas.edit', $paketKorisnika) }}"
-                                    >
-                                        <button
-                                            type="button"
-                                            class="btn btn-light"
-                                        >
-                                            <i class="icon ion-md-create"></i>
-                                        </button>
-                                    </a>
-                                    @endcan @can('view', $paketKorisnika)
-                                    <a
-                                        href="{{ route('paket-korisnikas.show', $paketKorisnika) }}"
-                                    >
-                                        <button
-                                            type="button"
-                                            class="btn btn-light"
-                                        >
-                                            <i class="icon ion-md-eye"></i>
-                                        </button>
-                                    </a>
-                                    @endcan @can('delete', $paketKorisnika)
-                                    <form
-                                        action="{{ route('paket-korisnikas.destroy', $paketKorisnika) }}"
-                                        method="POST"
-                                        onsubmit="return confirm('{{ __('crud.common.are_you_sure') }}')"
-                                    >
-                                        @csrf @method('DELETE')
-                                        <button
-                                            type="submit"
-                                            class="btn btn-light text-danger"
-                                        >
-                                            <i class="icon ion-md-trash"></i>
-                                        </button>
-                                    </form>
-                                    @endcan
+                                            @php
+                                                // safe fallback for admin detection
+                                                $isAdmin = $isAdmin ?? (optional(auth()->user())->email === 'admin@admin.com');
+                                            @endphp
+
+                                            @can('update', $paketKorisnika)
+                                                <a href="{{ route('paket-korisnikas.edit', $paketKorisnika) }}">
+                                                    <button type="button" class="btn btn-light">
+                                                        @if(isset($isAdmin) && $isAdmin)
+                                                            <i class="icon ion-md-create"></i>
+                                                        @else
+                                                            <i class="icon ion-md-eye"></i>
+                                                        @endif
+                                                    </button>
+                                                </a>
+                                            @endcan
+
+                                            @if(isset($isAdmin) && $isAdmin)
+                                                @can('view', $paketKorisnika)
+                                                    <a href="{{ route('paket-korisnikas.show', $paketKorisnika) }}">
+                                                        <button type="button" class="btn btn-light">
+                                                            <i class="icon ion-md-eye"></i>
+                                                        </button>
+                                                    </a>
+                                                @endcan
+
+                                                @can('delete', $paketKorisnika)
+                                                    <form action="{{ route('paket-korisnikas.destroy', $paketKorisnika) }}" method="POST" onsubmit="return confirm('{{ __('crud.common.are_you_sure') }}')">
+                                                        @csrf @method('DELETE')
+                                                        <button type="submit" class="btn btn-light text-danger">
+                                                            <i class="icon ion-md-trash"></i>
+                                                        </button>
+                                                    </form>
+                                                @endcan
+                                            @endif
                                 </div>
                             </td>
                         </tr>

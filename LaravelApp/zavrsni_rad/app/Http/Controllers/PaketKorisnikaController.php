@@ -22,14 +22,25 @@ class PaketKorisnikaController extends Controller
 
         $search = $request->get('search', '');
 
-        $paketKorisnikas = PaketKorisnika::search($search)
-            ->latest()
-            ->paginate(5)
-            ->withQueryString();
+        $isAdmin = auth()->check() && auth()->user()->email === 'admin@admin.com';
+
+        if ($isAdmin) {
+            $paketKorisnikas = PaketKorisnika::search($search)
+                ->latest()
+                ->paginate(5)
+                ->withQueryString();
+        } else {
+            // regular users: only show paket_korisnikas that belong to them
+            $paketKorisnikas = PaketKorisnika::where('user_id', auth()->id())
+                ->search($search)
+                ->latest()
+                ->paginate(5)
+                ->withQueryString();
+        }
 
         return view(
             'app.paket_korisnikas.index',
-            compact('paketKorisnikas', 'search')
+            compact('paketKorisnikas', 'search', 'isAdmin')
         );
     }
 
