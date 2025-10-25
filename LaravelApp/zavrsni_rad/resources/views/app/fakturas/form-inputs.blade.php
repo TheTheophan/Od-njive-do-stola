@@ -4,11 +4,11 @@
     <x-inputs.group class="col-sm-12">
         <x-inputs.select
             name="paket_korisnika_id"
-            label="Paket Korisnika"
+            label="Paket korisnika"
             required
         >
             @php $selected = old('paket_korisnika_id', ($editing ? $faktura->paket_korisnika_id : '')) @endphp
-            <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Paket Korisnika</option>
+            <option disabled {{ empty($selected) ? 'selected' : '' }}>Please select the Paket korisnika</option>
             @foreach($paketKorisnikas as $value => $label)
             <option value="{{ $value }}" {{ $selected == $value ? 'selected' : '' }} >{{ $label }}</option>
             @endforeach

@@ -22,7 +22,7 @@ class TipPaketaUpdateRequest extends FormRequest
         return [
             'cena_godisnje_pretplate' => ['nullable', 'numeric'],
             'cena_mesecne_pretplate' => ['nullable', 'numeric'],
-            'opis' => ['nullable', 'max:255', 'string'],
+            'opis' => ['nullable', 'max:9999', 'string'],
             'naziv' => ['required', 'max:64', 'string'],
         ];
     }

@@ -72,8 +72,13 @@
                         @forelse($fakturas as $faktura)
                         <tr>
                             <td>
-                                {{ optional($faktura->paketKorisnika)->adresa ??
-                                '-' }}
+                                @php
+                                    $owner = optional($faktura->paketKorisnika)->user;
+                                @endphp
+                                {{ $owner->name ?? '-' }}
+                                @if($owner && $owner->email)
+                                    <small class="text-muted">({{ $owner->email }})</small>
+                                @endif
                             </td>
                             <td class="text-right">{{ $faktura->cena ? number_format($faktura->cena, 2, ',', '.') . ' RSD' : '-' }}</td>
                             <td>{{ $faktura->tekst ?? '-' }}</td>

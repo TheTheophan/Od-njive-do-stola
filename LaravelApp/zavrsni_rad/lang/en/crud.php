@@ -30,7 +30,7 @@ return [
         'edit_title' => 'Izmeni fakturu',
         'show_title' => 'Prikaži fakturu',
         'inputs' => [
-            'paket_korisnika_id' => 'Paket Korisnika',
+            'paket_korisnika_id' => 'Paket korisnika',
             'cena' => 'Cena',
             'tekst' => 'Tekst',
             'placeno' => 'Placeno',
