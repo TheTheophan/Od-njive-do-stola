@@ -39,7 +39,7 @@
     <x-inputs.group class="col-sm-12">
         <x-inputs.checkbox
             name="placeno"
-            label="Placeno"
+            label="Plaćeno"
             :checked="old('placeno', ($editing ? $faktura->placeno : 0))"
         ></x-inputs.checkbox>
     </x-inputs.group>

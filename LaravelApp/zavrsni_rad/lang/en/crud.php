@@ -33,7 +33,7 @@ return [
             'paket_korisnika_id' => 'Paket korisnika',
             'cena' => 'Cena',
             'tekst' => 'Tekst',
-            'placeno' => 'Placeno',
+            'placeno' => 'Plaćeno',
         ],
     ],
 
@@ -63,8 +63,8 @@ return [
         'edit_title' => 'Izmeni tip paketa',
         'show_title' => 'Prikaži tip paketa',
         'inputs' => [
-            'cena_godisnje_pretplate' => 'Cena Godisnje Pretplate',
-            'cena_mesecne_pretplate' => 'Cena Mesecne Pretplate',
+            'cena_godisnje_pretplate' => 'Cena godišnje pretplate',
+            'cena_mesecne_pretplate' => 'Cena mesečne pretplate',
             'opis' => 'Opis',
             'naziv' => 'Naziv',
         ],
