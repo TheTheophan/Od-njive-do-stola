@@ -14,10 +14,13 @@
             <div class="mt-4">
                 <div class="mb-4">
                     <h5>@lang('crud.fakturas.inputs.paket_korisnika_id')</h5>
-                    <span
-                        >{{ optional($faktura->paketKorisnika)->adresa ?? '-'
-                        }}</span
-                    >
+                    @php $owner = optional($faktura->paketKorisnika)->user; @endphp
+                    <span>
+                        {{ $owner->name ?? '-' }}
+                        @if($owner && $owner->email)
+                            <small class="text-muted">({{ $owner->email }})</small>
+                        @endif
+                    </span>
                 </div>
                 <div class="mb-4">
                     <h5>@lang('crud.fakturas.inputs.cena')</h5>

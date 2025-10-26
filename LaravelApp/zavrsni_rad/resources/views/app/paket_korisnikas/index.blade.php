@@ -87,7 +87,8 @@
                         @forelse($paketKorisnikas as $paketKorisnika)
                         <tr>
                             <td>
-                                {{ $paketKorisnika->godisnja_pretplata ?? '-' }}
+                                @php $gp = $paketKorisnika->godisnja_pretplata; @endphp
+                                {{ is_null($gp) ? '-' : ($gp ? 'Da' : 'Ne') }}
                             </td>
                             <td>
                                 {{ optional($paketKorisnika->tipPaketa)->naziv
@@ -113,7 +114,6 @@
                                     class="btn-group"
                                 >
                                             @php
-                                                // safe fallback for admin detection
                                                 $isAdmin = $isAdmin ?? (optional(auth()->user())->email === 'admin@admin.com');
                                             @endphp
 

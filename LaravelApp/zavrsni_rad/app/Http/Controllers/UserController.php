@@ -12,9 +12,7 @@ use App\Http\Requests\UserUpdateRequest;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+   
     public function index(Request $request): View
     {
         $this->authorize('view-any', User::class);
@@ -29,9 +27,7 @@ class UserController extends Controller
         return view('app.users.index', compact('users', 'search'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    
     public function create(Request $request): View
     {
         $this->authorize('create', User::class);
@@ -39,9 +35,7 @@ class UserController extends Controller
         return view('app.users.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    
     public function store(UserStoreRequest $request): RedirectResponse
     {
         $this->authorize('create', User::class);
@@ -57,9 +51,7 @@ class UserController extends Controller
             ->withSuccess(__('crud.common.created'));
     }
 
-    /**
-     * Display the specified resource.
-     */
+   
     public function show(Request $request, User $user): View
     {
         $this->authorize('view', $user);
@@ -67,9 +59,7 @@ class UserController extends Controller
         return view('app.users.show', compact('user'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    
     public function edit(Request $request, User $user): View
     {
         $this->authorize('update', $user);
@@ -77,9 +67,7 @@ class UserController extends Controller
         return view('app.users.edit', compact('user'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    
     public function update(
         UserUpdateRequest $request,
         User $user
@@ -101,9 +89,7 @@ class UserController extends Controller
             ->withSuccess(__('crud.common.saved'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+   
     public function destroy(Request $request, User $user): RedirectResponse
     {
         $this->authorize('delete', $user);

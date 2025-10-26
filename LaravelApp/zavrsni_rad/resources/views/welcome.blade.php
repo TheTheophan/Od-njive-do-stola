@@ -55,7 +55,6 @@
                         @foreach (\App\Models\TipPaketa::take(3)->get() as $paket)
                             <div class="col-md-4 mb-4">
                                 <div class="card h-100" style="border-radius: 16px; overflow: hidden;">
-                                    <!-- Header with naziv -->
                                     <div style="background: #29A645; color: #fff; padding: 0.75rem; text-align: center; border-top-left-radius: 16px; border-top-right-radius: 16px;">
                                         <h5 class="card-title m-0" style="font-weight: bold; font-size: 1.25rem;">{{ $paket->naziv }}</h5>
                                     </div>

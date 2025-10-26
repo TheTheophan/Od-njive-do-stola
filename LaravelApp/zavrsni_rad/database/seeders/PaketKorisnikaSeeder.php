@@ -55,15 +55,15 @@ class PaketKorisnikaSeeder extends Seeder
         $tipPaketaIds = [1,2,3,4,5,6];
         $userIds = range(1,30);
 
-        // Pick 26 user IDs for packets, leave 4 unused
+        // 4 korisnika nema pakete
         $usedUserIds = array_slice($userIds, 0, 26);
 
         $entries = [];
-        // Select 26 user IDs for packets, leave 4 unused
+        
         $unusedUserIds = array_slice($userIds, -4);
         $usedUserIds = array_slice($userIds, 0, 26);
 
-        // Realistic instructions pool
+        // Uputstva dostave
         $realInstructions = [
             'Zgrada ima visoko prizemlje pa prvi sprat.',
             'Vrata stana su desno kad se izadje iz lifta i desno do kraja hodnika.',
@@ -77,6 +77,14 @@ class PaketKorisnikaSeeder extends Seeder
             'Stan ima interfon, pozvati broj 12.'
         ];
 
+        // prvih 15 imaju godisnju pretplatu;
+        // tip_paketa ima 6 cestih koji se dodeljuju u krug
+        // 26 zaredom i 4 random
+        // adresa/telefon/postanski_broj se biraju is nizova  
+        // prva 24 nemaju uputstvo
+        // $i % count(...) postavlja podatke iz pocetka kada u nizu nema novih
+        
+
         for ($i = 0; $i < 40; $i++) {
             $godisnja = $i < 15;
             $tipPaketaId = $tipPaketaIds[$i % count($tipPaketaIds)];
@@ -84,7 +92,7 @@ class PaketKorisnikaSeeder extends Seeder
             $adresa = $addresses[$i % count($addresses)];
             $brojTelefona = $phones[$i % count($phones)];
             $postanskiBroj = $postcodes[$i % count($postcodes)];
-            // 60% empty, 40% filled
+            // 60% prazni, 40% popunjeni
             if ($i < 24) {
                 $uputstvo = '';
             } else {

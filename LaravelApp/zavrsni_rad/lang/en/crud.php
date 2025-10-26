@@ -28,7 +28,7 @@ return [
         'new_title' => 'Nova faktura',
         'create_title' => 'Kreiraj fakturu',
         'edit_title' => 'Izmeni fakturu',
-        'show_title' => 'Prikaži fakturu',
+        'show_title' => 'Prikaz fakture',
         'inputs' => [
             'paket_korisnika_id' => 'Paket korisnika',
             'cena' => 'Cena',
@@ -43,7 +43,7 @@ return [
         'new_title' => 'Novi paket korisnika',
         'create_title' => 'Kreiraj paket korisnika',
         'edit_title' => 'Izmeni paket korisnika',
-        'show_title' => 'Prikaži paket korisnika',
+        'show_title' => 'Prikaz paketa korisnika',
         'inputs' => [
             'godisnja_pretplata' => 'Godišnja pretplata',
             'tip_paketa_id' => 'Tip Paketa',
@@ -61,7 +61,7 @@ return [
         'new_title' => 'Novi tip paketa',
         'create_title' => 'Kreiraj tip paketa',
         'edit_title' => 'Izmeni tip paketa',
-        'show_title' => 'Prikaži tip paketa',
+        'show_title' => 'Prikaz tipa paketa',
         'inputs' => [
             'cena_godisnje_pretplate' => 'Cena godišnje pretplate',
             'cena_mesecne_pretplate' => 'Cena mesečne pretplate',
@@ -76,7 +76,7 @@ return [
         'new_title' => 'Novi korisnik',
         'create_title' => 'Kreiraj korisnika',
         'edit_title' => 'Izmeni korisnika',
-        'show_title' => 'Prikaži korisnika',
+        'show_title' => 'Prikaz korisnika',
         'inputs' => [
             'name' => 'Ime',
             'email' => 'Email',

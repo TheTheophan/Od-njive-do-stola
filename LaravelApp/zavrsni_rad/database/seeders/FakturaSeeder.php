@@ -23,6 +23,7 @@ class FakturaSeeder extends Seeder
 
         $paketi = \App\Models\PaketKorisnika::all();
         $count = 0;
+        // cena zavisi od pretplate i označava prvih 20 faktura kao placene
         foreach ($paketi as $paket) {
             if ($count >= 40) break;
             $tipId = $paket->tip_paketa_id;
@@ -33,6 +34,7 @@ class FakturaSeeder extends Seeder
                 'cena' => $cena,
                 'tekst' => '',
                 'placeno' => $count < 20 ? true : false,
+
             ]);
             $count++;
         }

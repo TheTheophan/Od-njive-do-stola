@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row justify-content-center">
         @php
-            // Find the selected packet object for the card
             $tipPaketaObj = null;
             if(isset($lockedTipPaketaId)) {
                 $tipPaketaObj = \App\Models\TipPaketa::find($lockedTipPaketaId);
@@ -12,7 +11,6 @@
         @endphp
         @if($tipPaketaObj)
         <div class="col-md-5 mb-4">
-            <!-- Packet Info Card (copied from home.blade.php) -->
             <div class="card h-38" style="border-radius: 16px; overflow: hidden;">
                 <div style="background: #29A645; color: #fff; padding: 0.75rem; text-align: center; border-top-left-radius: 16px; border-top-right-radius: 16px;">
                     <h5 class="card-title m-0" style="font-weight: bold; font-size: 1.25rem;">{{ $tipPaketaObj->naziv }}</h5>
@@ -91,7 +89,7 @@
 
                         @include('app.paket_korisnikas.form-inputs')
 
-                        <!-- Mock Payment Processor Box (below postanski broj) -->
+                        <!-- Placeholder za implementaciju procesora placanja -->
                         <div class="form-group mt-3">
                             <div class="card border-info" style="border-radius: 12px;">
                                 <div class="card-body text-center text-info">

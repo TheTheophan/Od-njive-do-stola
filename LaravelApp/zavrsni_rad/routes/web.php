@@ -26,11 +26,18 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+//Rute regularnog korisnika
 Route::prefix('/')
     ->middleware('auth')
     ->group(function () {
-        Route::resource('fakturas', FakturaController::class);
         Route::resource('paket-korisnikas', PaketKorisnikaController::class);
+    });
+
+// Admin rute
+Route::prefix('/')
+    ->middleware(['auth', 'admin.email'])
+    ->group(function () {
+        Route::resource('fakturas', FakturaController::class);
         Route::resource('tip-paketas', TipPaketaController::class);
         Route::resource('users', UserController::class);
     });

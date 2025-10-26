@@ -25,17 +25,17 @@
                             <a class="nav-link" href="{{ route('fakturas.index') }}">Fakture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Paketi Korisnika</a>
+                            <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Paketi korisnika</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('tip-paketas.index') }}">Tipovi Paketa</a>
+                            <a class="nav-link" href="{{ route('tip-paketas.index') }}">Tipovi paketa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('users.index') }}">Korisnici</a>
                         </li>
                     @else
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Moji Paketi</a>
+                            <a class="nav-link" href="{{ route('paket-korisnikas.index') }}">Moji paketi</a>
                         </li>
                     @endif
                 @endauth

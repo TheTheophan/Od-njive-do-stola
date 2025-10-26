@@ -13,9 +13,7 @@ use App\Http\Requests\PaketKorisnikaUpdateRequest;
 
 class PaketKorisnikaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index(Request $request): View
     {
         $this->authorize('view-any', PaketKorisnika::class);
@@ -30,7 +28,6 @@ class PaketKorisnikaController extends Controller
                 ->paginate(5)
                 ->withQueryString();
         } else {
-            // regular users: only show paket_korisnikas that belong to them
             $paketKorisnikas = PaketKorisnika::where('user_id', auth()->id())
                 ->search($search)
                 ->latest()
@@ -44,9 +41,7 @@ class PaketKorisnikaController extends Controller
         );
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    
     public function create(Request $request): View
     {
         $this->authorize('create', PaketKorisnika::class);
@@ -54,7 +49,6 @@ class PaketKorisnikaController extends Controller
         $tipPaketas = TipPaketa::pluck('naziv', 'id');
         $users = User::pluck('name', 'id');
 
-        // Lock in selected packet and user if provided
         $lockedTipPaketaId = $request->get('tip_paketa_id');
         $lockedUserId = auth()->id();
 
@@ -64,16 +58,13 @@ class PaketKorisnikaController extends Controller
         );
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    
     public function store(PaketKorisnikaStoreRequest $request): RedirectResponse
     {
         $this->authorize('create', PaketKorisnika::class);
 
         $validated = $request->validated();
 
-        // Lock in user and tip_paketa if present
         if (isset($validated['tip_paketa_id']) && $request->has('lockedTipPaketaId')) {
             $validated['tip_paketa_id'] = $request->input('lockedTipPaketaId');
         }
@@ -85,7 +76,6 @@ class PaketKorisnikaController extends Controller
 
         $paketKorisnika = PaketKorisnika::create($validated);
 
-        // Create Faktura for this PaketKorisnika
         $tipPaketa = TipPaketa::find($paketKorisnika->tip_paketa_id);
         $godisnja = $paketKorisnika->godisnja_pretplata;
         $cena = $godisnja ? $tipPaketa->cena_godisnje_pretplate : $tipPaketa->cena_mesecne_pretplate;
@@ -101,9 +91,7 @@ class PaketKorisnikaController extends Controller
             ->withSuccess(__('crud.common.created'));
     }
 
-    /**
-     * Display the specified resource.
-     */
+    
     public function show(Request $request, PaketKorisnika $paketKorisnika): View
     {
         $this->authorize('view', $paketKorisnika);
@@ -111,9 +99,7 @@ class PaketKorisnikaController extends Controller
         return view('app.paket_korisnikas.show', compact('paketKorisnika'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    
     public function edit(Request $request, PaketKorisnika $paketKorisnika): View
     {
         $this->authorize('update', $paketKorisnika);
@@ -127,9 +113,7 @@ class PaketKorisnikaController extends Controller
         );
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    
     public function update(
         PaketKorisnikaUpdateRequest $request,
         PaketKorisnika $paketKorisnika
@@ -145,16 +129,13 @@ class PaketKorisnikaController extends Controller
             ->withSuccess(__('crud.common.saved'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    
     public function destroy(
         Request $request,
         PaketKorisnika $paketKorisnika
     ): RedirectResponse {
         $this->authorize('delete', $paketKorisnika);
 
-        // Delete related fakturas first
         $paketKorisnika->fakturas()->delete();
 
         $paketKorisnika->delete();
