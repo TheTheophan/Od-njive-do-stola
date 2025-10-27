@@ -1,34 +1,39 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
   <diagram name="Page-1" id="nmRIiKBizn_gXXf3CR2B">
-    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="925" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-1" value="Korisnik" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="60" y="290" width="30" height="60" as="geometry" />
+          <mxGeometry x="100" y="220" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sistem - Od njive do stola&lt;/b&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="160" y="110" width="400" height="660" as="geometry" />
+          <mxGeometry x="200" y="40" width="400" height="660" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Uo5ACUNSAF9uJj39UNaE-1" target="Uo5ACUNSAF9uJj39UNaE-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-15" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Uo5ACUNSAF9uJj39UNaE-13">
+          <mxGeometry x="-0.5654" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Uo5ACUNSAF9uJj39UNaE-1" target="Uo5ACUNSAF9uJj39UNaE-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-6" value="Upravljanje korisničkim nalogom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="180" width="140" height="70" as="geometry" />
+          <mxGeometry x="330" y="110" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="Uo5ACUNSAF9uJj39UNaE-6" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="320" as="sourcePoint" />
+            <mxPoint x="130" y="250" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-10" value="Pregled i pretraga paketa" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="270" width="140" height="70" as="geometry" />
+          <mxGeometry x="330" y="200" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="Uo5ACUNSAF9uJj39UNaE-12" value="Upravljanje porudžbinom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="350" width="140" height="70" as="geometry" />
+        <mxCell id="Uo5ACUNSAF9uJj39UNaE-12" value="Upravljanje porudžbinama" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="280" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Uo5ACUNSAF9uJj39UNaE-14" target="Uo5ACUNSAF9uJj39UNaE-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -40,19 +45,68 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-14" value="Administrator/&lt;div&gt;Vlasnik&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="670" y="440" width="30" height="60" as="geometry" />
+          <mxGeometry x="710" y="370" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Uo5ACUNSAF9uJj39UNaE-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="Uo5ACUNSAF9uJj39UNaE-14" target="Uo5ACUNSAF9uJj39UNaE-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Uo5ACUNSAF9uJj39UNaE-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=0.929;exitY=0.68;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="MQcWuQHOkohKZlLGP-uL-12" target="Uo5ACUNSAF9uJj39UNaE-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="370" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-16" value="Upravljanje paketima" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="440" width="140" height="70" as="geometry" />
+          <mxGeometry x="330" y="370" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-18" value="Upravljanje korisničkim nalozima" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="540" width="140" height="70" as="geometry" />
+          <mxGeometry x="330" y="470" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Uo5ACUNSAF9uJj39UNaE-20" value="Pregled faktura i analitika" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="640" width="140" height="70" as="geometry" />
+          <mxGeometry x="330" y="570" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-1" value="Procesor plaćanja" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="205" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQcWuQHOkohKZlLGP-uL-7" target="MQcWuQHOkohKZlLGP-uL-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="190" as="sourcePoint" />
+            <mxPoint x="640" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-10" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MQcWuQHOkohKZlLGP-uL-6">
+          <mxGeometry x="-0.7855" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-11" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MQcWuQHOkohKZlLGP-uL-6">
+          <mxGeometry x="0.742" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-7" value="Plaćanje" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="240" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.919;entryY=0.2;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;entryPerimeter=0;" edge="1" parent="1" source="MQcWuQHOkohKZlLGP-uL-7" target="Uo5ACUNSAF9uJj39UNaE-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-9" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MQcWuQHOkohKZlLGP-uL-8">
+          <mxGeometry x="0.0489" y="1" relative="1" as="geometry">
+            <mxPoint x="-13" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-12" value="Usluga/&lt;div&gt;Pomoć&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="330" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-13" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="330" as="sourcePoint" />
+            <mxPoint x="509.06" y="355.65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQcWuQHOkohKZlLGP-uL-14" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MQcWuQHOkohKZlLGP-uL-13">
+          <mxGeometry x="0.0489" y="1" relative="1" as="geometry">
+            <mxPoint x="-31" y="12" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
