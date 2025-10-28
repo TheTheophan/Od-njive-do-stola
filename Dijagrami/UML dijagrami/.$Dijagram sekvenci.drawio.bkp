@@ -1,0 +1,246 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="5GrghE165HpYhxea3Uu-">
+    <mxGraphModel dx="786" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="atafs7xlOA75pI15_PeN-1" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="20" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-2" value="Korisnik" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="24" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-3" value="Sistem" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="100" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-4" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="520" y="50" width="20" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-5" value="Administrator" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="24" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-6" value="Baza podataka" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="100" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-7" value="Korisnik želi da napravi porudžbinu" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="90" width="195" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-8" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="150" as="sourcePoint" />
+            <mxPoint x="289.5" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-9" value="Prijava na sistem (register/login)" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-11" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="180" as="sourcePoint" />
+            <mxPoint x="450" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-12" value="Provera korisničkih podataka" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-13" value="Potvrda" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry x="-0.8098" relative="1" as="geometry">
+            <mxPoint x="710" y="220" as="sourcePoint" />
+            <mxPoint x="630" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-14" value="Prikaz stranice sa paketima" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="260" as="sourcePoint" />
+            <mxPoint x="210" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-15" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="310" as="sourcePoint" />
+            <mxPoint x="220" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-16" value="Zahtev za pregled paketa" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="290" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-17" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-18" value="Preuzimanje podataka paketa" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="320" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-19" value="Podaci o paketu" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry x="-0.7622" relative="1" as="geometry">
+            <mxPoint x="710" y="380" as="sourcePoint" />
+            <mxPoint x="630" y="380" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-20" value="Prikaz detalja paketa" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="410" as="sourcePoint" />
+            <mxPoint x="210" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-21" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="450" as="sourcePoint" />
+            <mxPoint x="220" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-22" value="Potvrda i unos podataka za dostavu" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="430" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-23" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="480" as="sourcePoint" />
+            <mxPoint x="450" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-24" value="Čuvanje porudžbine" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="456" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-25" value="Potvrda o uspešnom čuvanju/unosu" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry x="-0.5719" relative="1" as="geometry">
+            <mxPoint x="710" y="520" as="sourcePoint" />
+            <mxPoint x="630" y="520" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="590" as="sourcePoint" />
+            <mxPoint x="289.5" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-27" value="Generisanje fakture" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="570" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-29" value="Prikaz potvrde o porudžbini i fakture" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="700" as="sourcePoint" />
+            <mxPoint x="210" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-30" value="Korisnik primećuje grešku u podacima za dostavu" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="85" y="710" width="155" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="790" as="sourcePoint" />
+            <mxPoint x="220" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-32" value="Kontaktiranje korisničke službe" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="770" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="836" as="sourcePoint" />
+            <mxPoint x="529.5" y="856" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="856" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-34" value="Obrada zahteva" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="810" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-35" value="Povratna informacija" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.7024" relative="1" as="geometry">
+            <mxPoint x="530" y="1230" as="sourcePoint" />
+            <mxPoint x="59.5" y="1230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-36" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="900" as="sourcePoint" />
+            <mxPoint x="370" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-37" value="Prijava na admin nalog" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="880" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-38" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="950" as="sourcePoint" />
+            <mxPoint x="450" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-39" value="Provera administratorskih privilegija" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="930" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-40" value="Potvrda administratorskog statusa" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry x="-0.5719" relative="1" as="geometry">
+            <mxPoint x="710" y="990" as="sourcePoint" />
+            <mxPoint x="630" y="990" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-41" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="1040" as="sourcePoint" />
+            <mxPoint x="450" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-42" value="Prikaz admin panela" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1020" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-43" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530.25" y="1074.5" as="sourcePoint" />
+            <mxPoint x="289.75" y="1074.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-44" value="Unos promena" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1050" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-46" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="1110" as="sourcePoint" />
+            <mxPoint x="709.5" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-47" value="Upis promena" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="atafs7xlOA75pI15_PeN-46">
+          <mxGeometry x="-0.4915" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-51" value="Potvda ažuriranja" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-3">
+          <mxGeometry x="-0.7622" relative="1" as="geometry">
+            <mxPoint x="710" y="1170" as="sourcePoint" />
+            <mxPoint x="630" y="1170" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-52" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="atafs7xlOA75pI15_PeN-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="1180" as="sourcePoint" />
+            <mxPoint x="450" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-53" value="Korisnik" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="1260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-54" value="Administrator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="1260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-55" value="Sistem" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1260" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="atafs7xlOA75pI15_PeN-56" value="Baza podataka" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="655" y="1260" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
